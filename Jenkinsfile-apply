@@ -31,7 +31,7 @@ pipeline {
       }
       steps {
         sh 'oc login -u testuser -p redhat123 --insecure-skip-tls-verify \
-            https://kubernets.default.svc:443'
+            https://kubernetes.default.svc:443'
         sh 'oc new-project test-testuser || true'
       }
     }
